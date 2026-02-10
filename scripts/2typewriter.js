@@ -5,13 +5,13 @@
 
         els.forEach((el) => {
             // support data-words="one|two|three" or fallback to existing textContent
-            const raw = (el.getAttribute('data-words') || el.textContent || 'Alterhimez').trim();
+            const raw = (el.getAttribute('data-words') || el.textContent || '@Alterhimez[1000ms]').trim();
             const words = raw.split('|').map(s => s.trim()).filter(Boolean);
-            if (words.length === 0) words.push('Alterhimez');
+            if (words.length === 0) words.push('@Alterhimez[1000ms]');
             const longestWord = words.reduce((max, word) => word.length > max.length ? word : max, '');
 
             // clear original content and build structure
-            el.textContent = '@';
+            el.textContent = '';
             const txt = document.createElement('span');
             txt.className = 'tw-text';
             const cursor = document.createElement('span');

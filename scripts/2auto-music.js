@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const playlist = [
         'music/0bg1.mp3','music/0bg2.mp3','music/0bg3.mp3','music/0bg4.mp3','music/0bg5.mp3',
-        'music/0bg6.mp3','music/0bg7.mp3','music/0bg8.mp3','music/0bg9.mp3','music/0bg0.mp3'
+        'music/0bg6.mp3','music/0bg7.mp3','music/0bg8.mp3','music/0bg9.mp3','music/0bg0.mp3','music/0bg10.mp3'
     ];
 
     function shuffle(arr) {
@@ -147,6 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             '0bg7': 'The Fat Rat',
             '0bg8': 'Bad Apple',
             '0bg9': 'Mentore potwore, mentos momentos',
+            '0bg10': 'engravings'
         };
 
         return NAME_MAP[name] || name;
